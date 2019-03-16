@@ -5,6 +5,7 @@
   <title>Registration form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -12,44 +13,46 @@
 <body>
 
   <form class="island">
-    <h1 class="">Want to go to Mars?</h1>
-    <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-    <fieldset>
-      <legend>Personal details</legend>
-      <div class="">
+    <h1 class="pad-t">Want to go to Mars?</h1>
+    <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+    <fieldset class="push-0 grid">
+      <legend class="push mega unit">Personal details</legend>
+      <div class="push unit xs-1 s-1 m-1 l-1-2 xl-1-2">
         <label for="name">Name</label>
-        <input id="name" type="text">
+        <input class="wrapper" id="name" type="text">
       </div>
-      <div class="">
+      <div class="push unit xs-1 s-1 m-1 l-1-2 xl-1-2">
         <label for="age">Age</label>
-        <input id="age" type="text">
+        <input class="wrapper" id="age" type="text">
       </div>
-      <div class="">
+      <div class="push unit xs-1 s-1 m-1 l-1-2 xl-1-2">
         <label for="email">Email</label>
-        <input id="email" type="email">
+        <input class="wrapper" id="email" type="email">
       </div>
-      <div class="">
-        <label for="fitness">Fitness</label>
-        <select id="fitness">
+      <div class="push unit xs-1 s-1 m-1 l-1-2 xl-1-2">
+        <label for="fitness">Physical fitness</label>
+        <select class="wrapper" id="fitness">
           <option>Super-human</option>
           <option>Fit as a fiddle</option>
           <option>Not terribly strong</option>
           <option>A little couch-potato-y</option>
         </select>
       </div>
-      <div class="">
+      <div class="push unit">
         <label for="address">Address</label>
-        <textarea id="address"></textarea>
+        <textarea class="wrapper" id="address"></textarea>
       </div>
     </fieldset>
-    <fieldset>
-      <legend>Mission statement</legend>
-      <div class="">
+    <fieldset class="push-0">
+      <legend class="push mega">Mission statement</legend>
+      <div class="push">
         <label for="mission">Why do you want to go to Mars?</label>
-        <textarea id="mission"></textarea>
+        <textarea class="wrapper" id="mission"></textarea>
       </div>
     </fieldset>
-    <button  class="btn" type="submit">Register for the trip!</button>
+    <div class="text-center push">
+      <button type="submit" class="btn">Register for the trip!</button>
+    </div>
   </form>
 
 </body>

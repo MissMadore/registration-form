@@ -3,5 +3,18 @@ html {
 }
 
 h1 {
-  border-bottom: #000
+  border-bottom: 1px solid #000;
+}
+
+legend {
+  font-style: italic;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+label,
+select,
+input {
+  display: block;
+  margin: 0;
 }
