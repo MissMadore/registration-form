@@ -12,7 +12,7 @@ h1 {
 }
 
 legend {
-  padding-right: 1rem;
+  padding-left: 0;
 }
 
 label,
@@ -24,4 +24,20 @@ input {
 
 .btn {
   color: #fff;
+}
+
+@media only screen and (min-width: 60em) {
+
+  form {
+    max-width: 38em;
+    margin: 0 auto;
+  }
+
+  .name,
+  .age,
+  .email,
+  .fitness {
+    width: 49%;
+  }
+
 }
